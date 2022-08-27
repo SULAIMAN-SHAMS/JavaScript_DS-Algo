@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Traversing & Accessing</title>
+  <h1>TRAVERSING & Accessing</h1>
+  <hr>
+  <ul>
+    <li>Make HTML Page write basic Array</li>
+    <li>Traversing with loop</li>
+    <li>Access element with text input and button</li>
+    <li>Validations</li>
+     </ul>
+     <hr>
+  <script>
+    let data=[2,3,5,10,1]
+    document.write("[",data,"]",'<br>')
+    for(let i=0;i<data.length;i++){
+      document.write(`Element at index ${i} is <strong>${data[i]}</strong> <br>`)
+    }
+    
+    //ACCESSING 
+    document.write(" <br>Enter index number to access it:")
+    
+
+    //IF BUTTON CLICKED.. SHOOOT!!!
+    function findelement(){
+      let num1=document.getElementById("Input").value
+      if (num1>=0 && num1<5)
+      alert(data[num1])
+      else{
+        alert("Sorry not available")
+      }
+     
+      }
+  </script>
+</head>
+<body>
+  <br>
+  <input type="text" id="Input"> <br>
+  
+ <button onclick="findelement()">CLICK!!!</button>
+
+ 
+
+  
+</body>
+</html>
